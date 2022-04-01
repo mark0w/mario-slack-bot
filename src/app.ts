@@ -1,5 +1,4 @@
 import {App, LogLevel} from '@slack/bolt'
-import {isGenericMessageEvent} from "./utils/helpers";
 
 const app = new App({
     token: process.env.BOT_TOKEN,
