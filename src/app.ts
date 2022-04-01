@@ -14,7 +14,7 @@ app.message('/mariostart' || ':mario:', async ({message, say}) => {
 });
 
 app.message('/marioend', async ({say}) => {
-    await say('Ookey dokey! Ending poll.');
+    await say('Hey! Come back here! You big-a monkey! - Ending poll.');
 });
 
 app.message('/mariofinish' || ':checkered_flag:', async ({say}) => {
