@@ -8,9 +8,21 @@ const app = new App({
     logLevel: LogLevel.DEBUG
 });
 
-app.message('/startmario' || ':mario:', async ({message, say}) => {
+app.message('/mariostart' || ':mario:', async ({message, say}) => {
     if (isGenericMessageEvent(message))
-        await say(`It's a Mario Time! <@${message.user}>`);
+        await say(`Mario Time! <@${message.user}>`);
+});
+
+app.message('/marioend', async ({say}) => {
+    await say('Ookey dokey! Ending poll.');
+});
+
+app.message('/mariofinish' || ':checkered_flag:', async ({say}) => {
+    await say('Wahoo! I will ask for positions in the leaderboard.');
+});
+
+app.message('/mariostats', async ({say}) => {
+   await say('Here we go! Stats are:');
 });
 
 (async () => {
