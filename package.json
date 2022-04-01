@@ -1,0 +1,34 @@
+{
+  "name": "mario-slack-bot",
+  "version": "1.0.0",
+  "description": "Slack bot for inviting friends to join Mario Kart!",
+  "main": "./dist/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p .",
+    "build:watch": "tsc -w -p .",
+    "start": "npm run build && node dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mark0w/mario-slack-bot.git"
+  },
+  "keywords": [
+    "mario",
+    "kart"
+  ],
+  "author": "mark0w",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mark0w/mario-slack-bot/issues"
+  },
+  "homepage": "https://github.com/mark0w/mario-slack-bot#readme",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@slack/bolt": "^3.11.0",
+    "dotenv": "^16.0.0",
+    "mongoose": "^6.2.9"
+  }
+}
